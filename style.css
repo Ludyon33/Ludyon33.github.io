@@ -1,0 +1,232 @@
+body {
+  -webkit-text-size-adjust: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  position: absolute;
+  --main-color: #fd6901;
+  --submain-color: #095793;
+  --bg-color: #fff;
+  width: 40vh;
+  height: 58vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  background: var(--bg-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 50px rgb(66, 121, 230);
+  justify-content: center;
+  justify-self: center;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.card__img {
+  height: 0vh;
+  width: 32vh;
+}
+  
+.card__img img {
+  margin-top: -4.3vh;
+  margin-left: -4vh;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card__avatar {
+  width: 17.5vh;
+  height: 17.5vh;
+  background: var(--bg-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 58px);
+  background-color: #000000;
+  margin-top: 3.8vh;
+}
+  
+.card__avatar img {
+  width: 16.8vh;
+  height: 16.8vh;
+  border-radius: 100%;
+}
+
+.card__title {
+  margin-top: 0vh;
+  font-weight: 500;
+  font-size: 2.5vh;
+  color: black;
+}
+  
+.card__subtitle {
+  margin-top: 0vh;
+  font-weight: 400;
+  font-size: 2.3vh;
+  color: var(--submain-color);
+}
+
+.card__wrapper{
+  align-self: start;
+  margin-left: 4vh;
+}
+
+.card-client {
+  width: 16vh;
+  padding-bottom: 2vh;
+  padding-left: 1.2vh;
+  padding-right: 1.2vh;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  background-color: #037abd;
+}
+  
+.card:hover {
+  transform: scale(1.02);
+}
+  
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #037abd;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+  
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+  
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+  
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.Social_media_gen {
+  width: 100%;
+  height: 0vh;
+  font-size: 1.6vh;
+  margin-top: 1.5vh;
+}
+  
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1.4vh;
+  background: #037abd;
+}
+  
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+  
+.social-media a:last-child {
+  margin-right: 0;
+}
+  
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+  
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  display: block;
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.front__text-para {
+  position: relative;
+  color: #000;
+  font-size: 1.4vh;
+  letter-spacing: 0.05vh;
+  text-align:start;
+  margin-bottom: 1.5vh;
+  vertical-align: middle;
+}
+
+.front__text-para img{
+  margin-bottom: -1vh;
+  margin-right: 0.4vh;
+}
+
+.save {
+  position: absolute;
+  --main-color: #fd6901;
+  --submain-color: #095793;
+  --bg-color: #fff;
+  width: 26vh;
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+  background: var(--bg-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 50px rgb(66, 121, 230);
+  justify-content: center;
+  justify-self: center;
+  margin-top: 80vh;
+  margin-bottom: 20vh;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.save:hover {
+  transform: scale(1.1);
+}
+
+.save:active {
+  transform: scale(0.9);  
+}
+
+.save a {
+  font-size: 2vh;
+  color: #037abd;
+  background-color: #ffffff;
+}
